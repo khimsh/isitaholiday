@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  background: #2448b4;
+  background: -webkit-linear-gradient(to right bottom, #b659f7, #2448b4);
+  background: linear-gradient(to right bottom, #b659f7, #2448b4);
+  color: #e3eaff;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+#holidayStatus {
+  font-size: 5rem;
+  text-align: center;
+}
