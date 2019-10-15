@@ -57,6 +57,14 @@ const supportedCountries = [
   {
     isoCode: 'gb',
     country: 'United Kingdom'
+  },
+  {
+    isoCode: 'nl',
+    country: 'Netherlands'
+  },
+  {
+    isoCode: 'se',
+    country: 'Sweden'
   }
 ];
 
@@ -71,6 +79,8 @@ supportedCountries.map(({ isoCode, country }) => {
 // Make call to the api when user switches the country
 selectCountry.addEventListener('change', e => {
   let url = `https://calendarific.com/api/v2/holidays?&api_key=${api_key}&country=${e.target.value}&year=${currentYear}`;
+
+  holidayStatus.innerText = 'Loading...';
 
   getHolidays(url)
     .then(data => {
