@@ -7,14 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Is today a Holiday?</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link preload href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Is today a Holiday?</h1>
+        <h1>Is today a Holiday in <span id="selectedCountry">Georgia</span>?</h1>
         <h2 id="holidayStatus"></h2>
+
+        <form class="form">
+            <div class="form-field">
+                <label for="selectCountry" class="form-label">Switch country</label>
+                <select name="country" id="selectCountry" class="form-select">
+                </select>
+            </div>
+        </form>
     </div>
 
 

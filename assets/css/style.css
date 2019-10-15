@@ -46,3 +46,31 @@ h1 {
   font-size: 5rem;
   text-align: center;
 }
+
+/* Form styles */
+
+.form {
+  margin-top: 3em;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  margin-right: 0.5em;
+}
+
+.form-select {
+  font-family: inherit;
+  font-size: 1.1rem;
+  color: #242424;
+
+  border: none;
+  border-radius: 0.15em;
+  background-color: #e3eaff;
+  padding: 0.3em;
+}
