@@ -80,7 +80,7 @@ supportedCountries.map(({ isoCode, country }) => {
 selectCountry.addEventListener('change', e => {
   let url = `https://calendarific.com/api/v2/holidays?&api_key=${api_key}&country=${e.target.value}&year=${currentYear}`;
 
-  holidayStatus.innerText = 'Loading...';
+  holidayStatus.innerHTML = loader;
 
   getHolidays(url)
     .then(data => {
@@ -102,3 +102,20 @@ selectCountry.addEventListener('change', e => {
   // Update header to display selected country
   selectedCountry.innerText = e.target.selectedOptions[0].text;
 });
+
+const loader = `
+<div class="lds-default">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+`;
