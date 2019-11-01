@@ -89,8 +89,17 @@ selectCountry.addEventListener('change', e => {
     .then(holidays => {
       let result = holidays.find(holiday => holiday.date.iso === getIsoDate());
 
+      if (holidayStatus.classList.contains('small-font')) {
+        holidayStatus.classList.remove('small-font');
+      }
+
       if (result && result.type.includes('National holiday')) {
         holidayStatus.innerText = 'Yes, it is!';
+      } else if (result && result.type.includes('Common local holiday')) {
+        let states = result.states.map(state => state.name);
+        states = states.join(', ');
+        holidayStatus.innerHTML = `Yes, it is in following states: <span class="returned-states">${states}</span>`;
+        holidayStatus.classList.add('small-font');
       } else {
         holidayStatus.innerText = 'Sadly, no.';
       }
