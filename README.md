@@ -3,6 +3,7 @@
 Currently supported countries are:
 
 - Georgia
+- Ireland
 - Germany
 - Belgium
 - United Kingdom
