@@ -47,6 +47,10 @@ const supportedCountries = [
     country: 'Ireland'
   },
   {
+    isoCode: 'pt',
+    country: 'Portugal'
+  },
+  {
     isoCode: 'at',
     country: 'Austria'
   },
