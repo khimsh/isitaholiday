@@ -4,6 +4,7 @@ Currently supported countries are:
 
 - Georgia
 - Ireland
+- Portugal
 - Germany
 - Belgium
 - United Kingdom
